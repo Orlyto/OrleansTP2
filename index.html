@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="global">
+        <nav>
+            <menu>
+                <a href="https://radiohead.com" class="logo">
+                    <img id="logo" src="images/logo-nav.png" alt="">
+                </a>
+                <div class="icons">
+                    <a href="#acceuil">
+                        <img src="images/icons/home.png" alt=""><br>
+                        <span>Acceuil</span>
+                    </a>
+                </div>
+                <div class="icons">
+                    <a href="#inscription">
+                        <img src="images/icons/form.png" alt=""><br>
+                        <span>Inscription</span>
+                    </a>
+                </div>
+                <div class="icons">
+                    <a href="#tableau">
+                        <img src="images/icons/table.png" alt=""><br>
+                        <span>Tableau</span>
+                    </a>
+                </div>
+                <div class="icons">
+                    <a href="#article">
+                        <img src="images/icons/article.png" alt=""><br>
+                        <span>Article</span>
+                    </a>
+
+                </div>
+                <div class="icons">
+                    <a href="#galerie">
+                        <img src="images/icons/galerie.png" alt=""><br>
+                        <span>Galerie</span>
+                    </a>
+                </div>
+                <div class="icons">
+                    <a href="#video">
+                        <img src="images/icons/video.png" alt=""><br>
+                        <span>Video</span>
+                    </a>
+                </div>
+            </menu>
+        </nav>
+        <div id="content">
+            <section id="acceuil">
+                <h5>TP2 - Automne 2024</h5>
+                <h1>Radiohead - La musique avant tout</h1>
+                <h3>Une site de Orléans Tabassian</h3>
+                <h4>Technique d'intégration multimédia</h4>
+                <h4>Collège de Maisonneuve</h4>
+                <a href="https://github.com/Orlyto/OrleansTP2">Lien Github</a>
+            </section>
+            <div id="cont1">
+
+                <section id="inscription">
+                    <h3>Inscris-toi à l'infolettre fan de Radiohead!</h3>
+                    <form action="traiter_form.php">
+                        <div id="info-personnelles">
+                            <label for="prenom">Prénom:</label>
+                            <input type="text" id="prenom" name="prenom"><br>
+                            <label for="nom">Nom:</label>
+                            <input type="text" id="nom" name="nom"><br>
+                            <label for="mail">E-mail:</label>
+                            <input type="text" id="mail" nom="mail"><br>
+                        </div>
+                        <div id="membre-pref">
+                            <p>Membre favoris du groupe:</p>
+                            <input type="radio" id="member" name="member" value="Thom">
+                            <label for="member">Thom Yorke</label>
+                            <input type="radio" id="member" name="member" value="Johny">
+                            <label for="member">Johny Greenwood</label><br>
+                            <input type="radio" name="member" id="member" value="Colin">
+                            <label for="member">Colin Greenwood</label>
+                            <input type="radio" name="member" id="member" value="Philip">
+                            <label for="member">Philip Selway</label><br>
+                            <input type="radio" name="member" id="member" value="Clive">
+                            <label for="member">Clive Deamer</label>
+                            <input type="radio" name="member" id="member" value="Ed">
+                            <label for="member">Ed O'Brien</label>
+                        </div>
+                        <div id="album-pref">
+                            <label for="album">Ton album préféré.e:</label>
+                            <select name="album" id="album">
+                                <option value="amsp">A Moon Shaped Pool</option>
+                                <option value="tkol">The King of Limbs</option>
+                                <option value="inRainbows">In Rainbows</option>
+                                <option value="httt">Hail To the Thief</option>
+                                <option value="amnesiac">Amnesiac</option>
+                                <option value="kidA">Kid A</option>
+                                <option value="okComputer">Ok Computer</option>
+                                <option value="theBends">The Bends</option>
+                                <option value="pabloHoney">Pablo Honey</option>
+                            </select>
+                            <p>Pourquoi cet album est-il votre préféré?:</p>
+                            <textarea name="explication" id="explication" rows="5" cols="40"></textarea><br>
+                        </div>
+                        <input id="bouton_submit" type="submit" value="Soumettre" aria-label="Soumettre" />
+                    </form>
+                </section>
+                <section id="tableau">
+                    <table>
+                        <tr>
+                            <th> Nom </th>
+                            <th> Couverture </th>
+                            <th> Date de parution </th>
+                            <th> Durée </th>
+                        </tr>
+                        <tr>
+                            <td>A Moon Shaped Pool</td>
+                            <td><img src="images/amsp.jpg" alt=""></td>
+                            <td>8 mai 2016</td>
+                            <td>52min 37sec</td>
+                        </tr>
+                        <tr>
+                            <td>The King of Limbs</td>
+                            <td><img src="images/tkol.jpg" alt=""></td>
+                            <td>18 février 2011</td>
+                            <td>37min 30sec</td>
+                        </tr>
+                        <tr>
+                            <td>In Rainbows</td>
+                            <td><img src="images/inRainbows.jpg" alt=""></td>
+                            <td>28 décembre 2007</td>
+                            <td>42min 38sec</td>
+                        </tr>
+                        <tr>
+                            <td>Hail To the Thief</td>
+                            <td><img src="images/httt.jpg" alt=""></td>
+                            <td>9 juin 2003</td>
+                            <td>56min 35sec</td>
+                        </tr>
+                        <tr>
+                            <td>Amnesiac</td>
+                            <td><img src="images/amnesiac.jpg" alt=""></td>
+                            <td>12 mars 2001</td>
+                            <td>43min 57sec</td>
+                        </tr>
+                        <tr>
+                            <td>Kid A</td>
+                            <td><img src="images/kidA.jpg" alt=""></td>
+                            <td>2 octobre 2000</td>
+                            <td>47min 11sec</td>
+                        </tr>
+                        <tr>
+                            <td>Ok Computer</td>
+                            <td><img src="images/okComputer.jpg" alt=""></td>
+                            <td>28 mai 1997</td>
+                            <td>53min 41sec</td>
+                        </tr>
+                        <tr>
+                            <td>The Bends</td>
+                            <td><img src="images/theBends.jpg" alt=""></td>
+                            <td>13 mars 1995</td>
+                            <td>48min 39sec</td>
+                        </tr>
+                        <tr>
+                            <td>Pablo Honey</td>
+                            <td><img src="images/pabloHoney.jpg" alt=""></td>
+                            <td>22 février 1993</td>
+                            <td>42min 15sec</td>
+                        </tr>
+                    </table>
+            </div>
+            </section>
+            <section id="article">
+                <h1>Radiohead,</h1>
+                <h2>mélodie et mélancolie</h2>
+                <div id="texte">
+                    <div>
+                        <p>
+
+                            La musique de Radiohead a toujours été une sorte de refuge pour moi. Il y a quelque chose de
+                            vraiment unique dans leur façon de capturer la mélancolie, non pas comme quelque chose de
+                            lourd ou de négatif, mais comme un état naturel, presque apaisant. Quand j’écoute des
+                            morceaux comme Pyramid Song ou Videotape, c’est comme si le temps ralentissait, et je
+                            pouvais enfin respirer. Pas besoin de faire semblant ou de chercher à expliquer ce que je
+                            ressens, leur musique le fait pour moi. Ce n’est pas qu’elle me rend plus triste, mais
+                            plutôt qu’elle m’aide à accepter la tristesse quand elle est là.</p>
+                    </div>
+                    <img src="images/radiohead_perso.png" alt="">
+                    <div>
+                        <p>Leur sonorité est difficile à décrire, mais c’est cette combinaison de voix flottante, de
+                            mélodies simples et de textures complexes qui me touche à chaque fois. Thom Yorke et le
+                            groupe ont une manière de rendre chaque note et chaque mot importants, comme si rien n’était
+                            laissé au hasard. Ces moments passés à écouter Radiohead sont souvent ceux où je me sens le
+                            plus connecté à moi-même, où je peux m’abandonner à mes pensées sans chercher à les fuir.
+                            C’est cette sincérité, cette façon de transformer la mélancolie en quelque chose de beau,
+                            qui me fait revenir à eux encore et encore. Avec Radiohead, même les jours gris ont une
+                            certaine poésie, et ça, c’est un cadeau précieux.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="galerie">
+                <img src="images/photo-band.jpg" alt="">
+                <img src="images/tour.webp" alt="">
+                <img src="images/recording.jpg" alt="">
+                <img src="images/recording2.webp" alt="">
+                <img src="images/tour2.webp" alt="">
+            </section>
+            <section id="video">
+                <h2>In Rainbows - In the basement</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DWuAn6C8Mfc?si=dqtzgqCgAez3syqQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>Ceci est un de mes enrigstrement de radiohead préféré. Weird Fishes / Arpeggi, la première chanson
+                    jouée est ma chanson préférée a vie. Ces paroles résonnent avec moi plus que n'importe quelle autre
+                    chanson. </p>
+            </section>
+        </div>
+        <footer>
+            <div id="infos">
+                <p>3800 rue Sherbrooke</p>
+                <a href="https://radiohead.com">radiohead.com</a>
+                <p>Avis de confidalitée | Privacy Notice</p>
+            </div>
+            <div id="reseaux-sociaux">
+                <div>
+                    <img src="images/facebook_logo.png" alt="">
+                    <p>Facebook</p>
+                </div>
+                <div>
+                    <img src="images/instagram_logo.png" alt="">
+                    <p>Instagram</p>
+                </div>
+                <div>
+                    <img src="images/x_logo.png" alt="">
+                    <p>X</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
